@@ -45,15 +45,33 @@ Configured local security policies including:
 - Account lockout after 5 invalid login attempts
 - 15-minute account lockout duration
 
+  #### Configuration Evidence
+
+The following screenshot shows the configured local password and account lockout policies.
+
+![Password and Account Lockout Policy](screenshots/password-lockout-policy.png)
+
 ### 3. Local Group Policy
 
 Used Local Group Policy to restrict standard-user access to administrative features, including Control Panel and system settings.
 
 Additional restrictions were tested to limit access to administrative tools.
 
+#### Configuration Evidence
+
+The following screenshot shows the Local Group Policy configured to prohibit standard-user access to Control Panel and PC settings.
+
+![Local Group Policy Restriction](screenshots/group-policy-restriction.png)
+
 ### 4. Folder Redirection
 
 Configured folder redirection to store user documents on a separate virtual disk and verified the new document location using PowerShell.
+
+#### Verification
+
+PowerShell and the Documents folder properties were used to verify that the user's Documents folder was redirected to the configured location.
+
+![Folder Redirection Verification](screenshots/folder-redirection-verification.png)
 
 ### 5. User Account Control
 
@@ -63,9 +81,21 @@ Configured UAC security settings to limit unauthorized elevation and strengthen 
 
 Used Windows Task Scheduler to create an automated disk-cleanup task.
 
+#### Configuration Evidence
+
+Task Scheduler was configured to run the DailyCleanup task automatically at 2:00 AM each day.
+
+![Daily Cleanup Scheduled Task](screenshots/task-scheduler-daily-cleanup.png)
+
 ### 7. Microsoft Defender
 
 Configured Microsoft Defender settings and scheduled antivirus scans using PowerShell.
+
+#### Configuration and Verification
+
+Microsoft Defender settings were configured and verified using PowerShell. During configuration, an incorrect PowerShell parameter generated an error. The parameter was corrected, and the resulting Defender settings and service status were successfully verified.
+
+![Microsoft Defender PowerShell Configuration](screenshots/defender-powershell-configuration.png)
 
 ### 8. Verification and Logging
 
@@ -76,6 +106,12 @@ Verified configurations using:
 - Task Scheduler
 - Local Security Policy
 - Microsoft Defender logs
+
+#### Security Policy Verification
+
+The effective Windows security policy was exported and reviewed using PowerShell to verify password age, minimum password length, and password history settings.
+
+![PowerShell Security Policy Verification](screenshots/powershell-security-policy-verification.png)
 
 ## Key Takeaways
 
