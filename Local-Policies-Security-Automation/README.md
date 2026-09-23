@@ -119,4 +119,4 @@ This project strengthened my understanding of Windows endpoint administration an
 
 ## Screenshots
 
-Screenshots documenting the configurations and verification steps will be included in this project.
+Screenshots throughout this project document the configurations, troubleshooting, and verification steps completed during the lab.
