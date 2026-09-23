@@ -41,6 +41,7 @@ Projects will be added as they are completed and documented.
 
 - [Manage Devices with Local Policies, Security, and Automation](./Local-Policies-Security-Automation/)
 
+- [Windows 11 Deployment and Security Configuration](./Windows-11-Deployment-and-Security/)
 ---
 
 ## About Me
