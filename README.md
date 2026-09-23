@@ -39,7 +39,7 @@ Projects will be added as they are completed and documented.
 
 ### Current Projects
 
-- Manage Devices with Local Policies, Security, and Automation *(Coming Soon)*
+- Manage Devices with Local Policies, Security, and Automation
 
 ---
 
